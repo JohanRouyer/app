@@ -17,8 +17,8 @@ app.get("/", (req, res) => {
 res.json({ message: "Welcome to my REST." });
 });
 
-require("../routes/file.routes")(app);
-require("../routes/user.routes")(app);
+require("./routes/file.routes")(app);
+require("./routes/user.routes")(app);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
