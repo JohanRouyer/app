@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.get("/", (req, res) => {
-res.json({ message: "Welcome to my REST." });
+res.json({ message: "Welcome to my manage account api." });
 });
 
 require("./routes/file.routes")(app);
