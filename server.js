@@ -19,7 +19,7 @@ require("../app/model/db")
 require("../app/routes/file.routes")(app);
 require("../app/routes/user.routes")(app);
 
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
 console.log(`Server is running on port ${PORT}.`);
 });
