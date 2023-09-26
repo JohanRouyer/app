@@ -14,7 +14,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
 res.json({ message: "Welcome to my REST." });
 });
-require("../app/model/db")
 
 require("../app/routes/file.routes")(app);
 require("../app/routes/user.routes")(app);
